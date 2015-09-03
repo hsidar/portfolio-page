@@ -11,6 +11,7 @@ var rename = require('gulp-rename');
 var autoprefixer = require('gulp-autoprefixer');
 var imagemin = require('gulp-imagemin');
 var pngquant = require('imagemin-pngquant');
+var ghPages = require('gulp-gh-pages');
 
 // Lint Task
 gulp.task('lint', function() {
@@ -62,7 +63,10 @@ gulp.task('watch', function() {
 });
 
 // Deploy to Github Pages
-
+gulp.task('deploy', function() {
+  return gulp.src('./dist/**/*')
+    .pipe(ghPages());
+});
 
 
 // Default Task
