@@ -1,6 +1,183 @@
-$poop: green;
+* {
+  margin: 0;
+  padding: 0;
+}
 
-.poop {
-  color: $poop;
-  animation: poop;
+body,html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  font-family: 'Maven Pro', sans-serif;
+  color: white;
+}
+
+
+/* Hide ping dot for heroku apps */
+.ping {
+  display: none;
+}
+
+
+/* add some space around information icon so people can tap it more easily */
+.touch-padding {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  height: 25vw;
+  width: 25vw;
+}
+
+.touch-icon {
+  position: relative;
+  right: 2vw;
+  bottom: 7vw;
+  height: 10vw;
+}
+
+
+/* the big name at the top */
+.showcase-name {
+  text-align: center;
+  height: 100%;
+  background: url("../images/4.jpg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  font-size: 24vw;
+}
+
+.showcase-list {
+  height: 100%;
+  list-style-type: none;
+}
+
+.showcase-list-item {
+  height: 20%;
+}
+
+
+/* the links at the bottom */
+.showcase-links {
+  height: 100%;
+  text-align: center;
+  background: url("../images/5.jpg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+.spacer-mobile {
+  width: 50%;
+  margin: 0 25%;
+}
+
+.spacer-desktop {
+  display: none;
+}
+
+.showcase-text {
+  height: 10%;
+  box-sizing: border-box;
+  padding: 10% 0;
+  font-size: 5vh;
+}
+
+.showcase-text-link {
+  color: white;
+  text-decoration: none;
+  border-bottom:1px white solid;
+  margin: 0 3%;
+}
+
+.showcase-werds {
+  height: 20%;
+  box-sizing: border-box;
+  padding: 10% 0;
+  font-size: 5vh;
+}
+
+.showcase-icons {
+  height: 20%;
+  box-sizing: border-box;
+  padding: 10%;
+  font-size: 5vh;
+}
+
+.showcase-icon-link {
+  color: white;
+  text-decoration: none;
+  padding: 0 5%;
+}
+
+.showcase-icon-image {
+  height: 100%;
+}
+
+
+/* media query for desktop view */
+
+@media (min-width: 600px)
+{
+  
+/* change to single page and background */
+  body {
+    background: url("../images/4.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    overflow: hidden;
+  }
+  
+  .showcase-name {
+    height: 30%;
+    background: none;
+  }
+  
+  .showcase-list {
+    font-size: 10vw;
+  }
+  
+/* force my name to reassemble like voltron */
+  .showcase-list-item {
+    display: inline-block;
+  }
+  
+  .touch-icon {
+    display: none;
+  }
+  
+  .showcase-links {
+    background: none;
+    height: 70%;
+  }
+  
+  .showcase-werds {
+    display: inline;
+  }
+  
+  .spacer-mobile {
+    display: none;
+  }
+  
+  .spacer-desktop {
+    display: inline;
+    font-size: 2vw;
+    margin: 1%;
+  }
+  
+  .showcase-text {
+    padding: 5%;
+  }
+  
+  .showcase-icons {
+    padding: 3%;
+  }
+  
+  .showcase-icon-link {
+    padding: 2%;
+  }
+  
+  .showcase-icon-image {
+    height: 5vw;
+  }
+  
 }
