@@ -1,0 +1,33 @@
+{
+  "name": "portfolio-page",
+  "version": "1.0.0",
+  "description": "see name",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hsidar/portfolio-page.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hsidar/portfolio-page/issues"
+  },
+  "homepage": "https://github.com/hsidar/portfolio-page#readme",
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-autoprefixer": "^2.3.1",
+    "gulp-awspublish": "^2.0.2",
+    "gulp-concat": "^2.6.0",
+    "gulp-imagemin": "^2.3.0",
+    "gulp-jshint": "^1.11.2",
+    "gulp-rename": "^1.2.2",
+    "gulp-ruby-sass": "^1.1.0",
+    "gulp-s3": "^0.3.0",
+    "gulp-sass": "^2.0.4",
+    "gulp-shell": "^0.4.3",
+    "gulp-uglify": "^1.2.0"
+  }
+}

@@ -1,0 +1,13 @@
+aws-credentials.json
+.DS_Store
+*.log
+node_modules
+build
+*.node
+components
+coverage
+*.orig
+.idea
+test/out-fixtures/*
+test/watch-*.txt
+gulp.1
