@@ -1,0 +1,128 @@
+body {
+  background: black;
+}
+
+.eye-mask {
+  position: absolute;
+  width: 120vh;
+  height: 120vh;
+  border-radius:100% 0;
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+
+#eyeball {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#cornea {
+  background-color: #fd6882;
+  overflow: hidden;
+}
+
+#sclera {
+  position: relative;
+  left: 53%;
+  top: 53%;
+  width: 200%;
+  border-radius: 100%;
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+#pupil {
+  position: absolute;
+  background-color: black;
+  top: 90%;
+  left: 70%;
+  height: 20vh;
+  width: 20vh;
+  border-radius: 100%;
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+#glisten {
+  position: absolute;
+  background-color: black;
+  top: 50%;
+  left: 50%;
+  height: 0;
+  width: 0;
+  border-radius: 100%;
+  border-right: 1px solid white;
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+#eyelid {
+  border-style: solid;
+  border-color: black;
+  border-width: 700 300 300 700;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+#eyelashes {
+  border: 2px solid yellow;
+}
+
+
+#orbicularis {
+  top: -4vh;
+  border-top: 5px solid yellow;
+  opacity: 0;
+}
+
+#oculi {
+  top: 4vh;
+  border-bottom: 5px solid yellow;
+  opacity: 0;
+}
+
+button {
+  background:none;
+  border:none;
+  outline:none;
+  padding:0;
+  font: inherit;
+  color: white;
+  cursor: pointer;
+}
+
+
+.link {
+  position: absolute;
+  width: 20%;
+  color: white;
+  z-index:3;
+}
+
+
+#upper-left {
+  top: 0;
+  left: 0;
+  margin-top: 6%;
+  transform: rotate(-35deg);
+}
+
+#upper-right {
+  top: 0;
+  right: 0;
+  margin-top: 6%;
+  transform: rotate(35deg);
+}
+
+#lower-left {
+  bottom: 0;
+  left: 0;
+  margin-bottom: 6%;
+  transform: rotate(35deg);
+}
+
+#lower-right {
+  bottom: 0;
+  right: 0;
+  margin-bottom: 6%;
+  transform: rotate(-35deg);
+}
+
