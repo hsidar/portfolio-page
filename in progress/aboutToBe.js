@@ -1,4 +1,9 @@
 window.onload = function(){
+  
+ $("#quote")
+.html('"I was a victim of a series of accidents, as are we all." - Kurt Vonnegut, The Sirens of Titan')
+.fadeIn(2000).delay(5500)
+.fadeOut(2000);  
 
 var tl = new TimelineLite();
 
